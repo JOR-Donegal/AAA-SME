@@ -8,17 +8,17 @@ I am going to follow general good practice and use VLANs to enforce application 
 - I will have at least 3 routers to each VLAN using router redundancy (HSRP/VRRP). .1, .2, .3
 - The shared gateway address for these routers will be .20 in every VLAN.
 - I will use .21-.99 in each VLAN for statics.
-- I will use .110-.199 in each VLAN for DHCP. In practice, this implies 100 nodes per VLAN as a design specification.
+- I will use .100-.199 in each VLAN for DHCP. In practice, this implies 100 nodes per VLAN as a design specification.
 - I will reserve addresses over .200 in each VLAN. This will give me some headroom if I run out of addresses!
 
 The table blow summarizes the VLANs I will create.
 
-| VLAN  | Purpose                |
-| ------| ---------------------- |
-|  1    | Unused                 |
-|  2    | Hosts                  |
-|  5    | Clients (technicians)  |
-|  6   | Services                |
+| VLAN  | Purpose                | Subnet         |
+| ------| ---------------------- | -------------- |
+|  1    | Unused                 | 10.0.1.0/24    |
+|  2    | Hosts                  | 10.0.2.0/24    |
+|  5    | Clients (technicians)  | 10.0.5.0/24    |
+|  6    | Services               | 10.0.6.0/24    |
 
 Each host and server will have a fixed IP address, and it will use the same last octet in any VLAN.
 

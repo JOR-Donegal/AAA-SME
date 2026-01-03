@@ -6,10 +6,12 @@ I will not build the hosts until I get to the customer site, and I have the actu
 Once the VMS are created, I will patch them up to date.
 
 I now build and test 
+
 - w25-desktop
 - w25-core
 
-I am going to assumme you can build Windows GUI instances, and that build __w25-desktop__ using the Windows Server 2025 Standard ISO. Make sure it is set to the correct time zone.
+## Build desktop instance
+I am going to assume you can build Windows GUI instances, and that you build __w25-desktop__ using the Windows Server 2025 Standard ISO. Make sure it is set to the correct time zone.
 
 ### Do updates
 
