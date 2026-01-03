@@ -15,7 +15,7 @@ The table blow summarizes the VLANs I will create.
 
 | VLAN  | Purpose                | Subnet         |
 | ------| ---------------------- | -------------- |
-|  1    | Unused                 | 10.0.1.0/24    |
+|  1    | Unused                 |                |
 |  2    | Hosts                  | 10.0.2.0/24    |
 |  5    | Clients (technicians)  | 10.0.5.0/24    |
 |  6    | Services               | 10.0.6.0/24    |

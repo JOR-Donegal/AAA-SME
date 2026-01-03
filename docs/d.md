@@ -30,7 +30,7 @@ For me, if was InterfaceIndex 4
 Now I set the correct IPv4 settings for __dc1__.
 
 ```
-New-NetIPAddress -InterfaceIndex 6 -IPAddress 10.0.6.31 -PrefixLength 24 -DefaultGateway 10.0.6.20
+New-NetIPAddress -InterfaceIndex 4 -IPAddress 10.0.6.31 -PrefixLength 24 -DefaultGateway 10.0.6.20
 ```
 Finally, I reboot to make these settings current.
 ````
@@ -38,7 +38,7 @@ Finally, I reboot to make these settings current.
 Restart-Computer
 ````
 
-## Install features and a new forest
+## Install features for a new forest
 Now __dc1__ is ready for me to install active directory. 
 ````
 # Set the forest name
