@@ -1,1 +1,1 @@
-# Configure DNS
+# Configure DC2

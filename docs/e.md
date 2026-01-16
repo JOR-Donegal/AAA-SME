@@ -16,7 +16,7 @@ If HeadOffice had more than one physical site, we would document them with uniqu
 
 For this simple project, we will leave inter-site transports as they are. In a complex project with multiple sites, we may define topologies here. Way too complicated for this exercise!
 
-## Active Directory Doamins and Trusts
+## Active Directory Domains and Trusts
 This is a single domain and single site project. This is the simplest topology we can have but also the most common.
 
 Note that we can upgrade the AD database from here (raising functional level), something we rarly have to do.
@@ -42,3 +42,9 @@ Best practice is to create a top level OU at the highest level we might want to 
 <figcaption>Fig 5. Organisational units.</figcaption>
 </figure>
  
+ ## Finally
+ We have touched the surface here. 
+
+ To properly cover configuring Active Directory for a single site and domain would be the equivalent of a five-credit module at this level. We need to know this much about Active Directory so we can make things work in our hybrid cloud. We need AAA and the ability to do back authentication. We need DNS DHCP and a source of time. That is the very restricted scope of what I want to cover here.
+ 
+Later in this module, we will deal with complex multi domain configurations, but also in a curtailed way, concerned only with the structure of a complex AAA as we would require for a multi domain organization.
